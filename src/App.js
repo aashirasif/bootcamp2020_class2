@@ -8,9 +8,8 @@ function App() {
       <div class="Main2">
         <ul>
           <li>Aashir</li>
-          <li>Aashir</li>
-          <li>Aashir</li>
-          <li>Aashir</li>
+          <li>Rashode main kaun tha??</li>
+          <li>OO bhai maro mujhe maroo </li>
         </ul>
       </div>
     </div>
