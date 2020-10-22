@@ -1,16 +1,19 @@
-import React, {useState} from 'react';
+import React,{useState} from 'react';
 import './App.css';
+import Context from './Context/Context.js';
+import { Parent } from './Parent';
+import State from './State';
 
 function App() {
-  let [count,setCount] = useState(0);
+  let n_value = useState(0)
   return (
-   <div>
-     <h2>Count = {count}</h2>
-     <br/>
-     <button onClick={()=> setCount(++count)}>+</button>
-     <button onClick={()=> setCount(--count)}>-</button>
-   </div>
+    <div>
+    <Context.Provider value={n_value}>
+      <State/>
+    </Context.Provider>
+    </div>
   );
+ 
 }
 
 export default App;
